@@ -1,0 +1,13 @@
+<div class="chorus-list">
+  <div class="chorus-list__header">
+    <h2 class="chorus-list__title">Public View</h2>
+  </div>
+  <div class="chorus-list__content">
+    <div class="chorus-list__item" *ngFor="let chorus of choruses">
+      <div class="chorus-list__item-content">
+        <div class="chorus-list__item-title">{{ chorus.name }}</div>
+        <div class="chorus-list__item-description">{{ chorus.description }}</div>
+      </div>
+    </div>
+  </div>
+</div>
