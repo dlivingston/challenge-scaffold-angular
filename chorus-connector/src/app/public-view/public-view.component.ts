@@ -4,7 +4,7 @@ import { ChorusesService } from '../choruses.service';
 @Component({
   selector: 'app-public-view',
   templateUrl: './public-view.component.html',
-  styleUrls: ['./public-view.component.css']
+  styleUrls: ['./public-view.component.scss']
 })
 export class PublicViewComponent implements OnInit {
   choruses: any[] = [];
