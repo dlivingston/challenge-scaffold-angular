@@ -3,11 +3,12 @@
     <h2 class="chorus-list__title">Public View</h2>
   </div>
   <div class="chorus-list__content">
-    <div class="chorus-list__item" *ngFor="let chorus of choruses">
-      <div class="chorus-list__item-content">
-        <div class="chorus-list__item-title">{{ chorus.name }}</div>
-        <div class="chorus-list__item-description">{{ chorus.description }}</div>
-      </div>
-    </div>
+    <mat-card appearance="outlined" class="chorus-list__item" *ngFor="let chorus of choruses">
+      <mat-card-header>
+        <mat-card-title>{{ chorus.name }} - {{ chorus.location.city }}, {{ chorus.location.state }} </mat-card-title>
+        <mat-card-subtitle>{{ chorus.description }}</mat-card-subtitle>
+      </mat-card-header>
+
+    </mat-card>
   </div>
 </div>
