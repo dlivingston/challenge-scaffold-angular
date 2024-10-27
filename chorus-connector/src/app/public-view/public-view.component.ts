@@ -8,6 +8,7 @@ import { ChorusesService } from '../choruses.service';
 })
 export class PublicViewComponent implements OnInit {
   choruses: any[] = [];
+  searchTerm: string = '';
 
   constructor(private chorusesService: ChorusesService) { }
 
