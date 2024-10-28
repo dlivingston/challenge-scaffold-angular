@@ -2,10 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 2rem 2rem 0 2rem;
   border-radius: 0.5rem;
-
+ .chorus-search {
+  width: 100%;
+ }
 }
 .chorus-list__content {
   display: flex;

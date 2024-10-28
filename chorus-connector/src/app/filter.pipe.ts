@@ -10,8 +10,10 @@ export class FilterPipe implements PipeTransform {
     if(!searchTerm) return items;
 
     searchTerm = searchTerm.toLowerCase();
-    return items.filter( it => {
-      return it.name.toLowerCase().includes(searchTerm);
+    return items.filter(it => {
+      return it.name.toLowerCase().includes(searchTerm) ||
+             it.location.city.toLowerCase().includes(searchTerm) ||
+             it.location.state.toLowerCase().includes(searchTerm);
     });
   }
 

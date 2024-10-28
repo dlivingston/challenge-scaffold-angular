@@ -1,12 +1,12 @@
 <div class="chorus-list">
   <div class="chorus-list__header">
-    <mat-form-field appearance="outline">
-      <mat-icon matPrefix>search</mat-icon>
-      <input matInput placeholder="Search" [(ngModel)]="searchTerm" />
+    <mat-form-field appearance="outline" class="chorus-search">
+      <mat-icon matPrefix aria-label="Search">search</mat-icon>
+      <input matInput placeholder="Search (Name, City, State)" [(ngModel)]="searchTerm" />
     </mat-form-field>
   </div>
   <div class="chorus-list__content">
-    <mat-card appearance="outlined" class="chorus-list__item" *ngFor="let chorus of choruses">
+    <mat-card appearance="outlined" class="chorus-list__item" *ngFor="let chorus of choruses | filter: searchTerm">
       <mat-card-header>
         <mat-card-title>{{ chorus.name }}</mat-card-title>
         <mat-card-subtitle>{{ chorus.location.city }}, {{ chorus.location.state }}</mat-card-subtitle>
