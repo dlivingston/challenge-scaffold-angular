@@ -7,15 +7,18 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PublicViewComponent } from './public-view/public-view.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
 import { FilterPipe } from './filter.pipe';
-import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './login/login.component';
 import { AdminViewComponent } from './admin-view/admin-view.component';
+import { EditChorusDialogComponent } from './edit-chorus-dialog/edit-chorus-dialog.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { AdminViewComponent } from './admin-view/admin-view.component';
     PublicViewComponent,
     FilterPipe,
     LoginComponent,
-    AdminViewComponent
+    AdminViewComponent,
+    EditChorusDialogComponent
   ],
   imports: [
     AppRoutingModule,
@@ -31,6 +35,7 @@ import { AdminViewComponent } from './admin-view/admin-view.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    MatDialogModule,
     MatButtonModule,
     MatCardModule,
     MatFormFieldModule,

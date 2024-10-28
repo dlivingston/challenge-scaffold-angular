@@ -1,0 +1,14 @@
+.edit-chorus-dialog-wrapper {
+  h1 {
+    margin-bottom: 0;
+  }
+  form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    [formgroupname='location'] {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

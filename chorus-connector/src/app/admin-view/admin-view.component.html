@@ -1,16 +1,16 @@
 <div class="admin-container">
   <div class="admin-header">
     <h1>Admin View</h1>
-    <button mat-raised-button color="primary" [routerLink]="['/admin', 'add-chorus']">Add Chorus</button>
+    <button mat-raised-button color="primary" (click)="addChorus()">Add Chorus</button>
   </div>
   <div class="admin-chorus-list">
     <mat-card appearance="outlined" class="chorus-list__item" *ngFor="let chorus of choruses">
       <mat-card-content>
         {{ chorus.name }} - {{ chorus.location.city }}, {{ chorus.location.state }} | Contact Email: {{ chorus.contactEmail }}
       </mat-card-content>
-      <mat-card-actions align="start">
-        <button mat-button color="primary" [routerLink]="['/admin', 'edit-chorus', chorus.id]">Edit</button>
-        <button mat-button color="warn" >Delete</button>
+      <mat-card-actions align="start" class="actions">
+        <button mat-raised-button (click)="editChorus(chorus)">Edit</button>
+        <button mat-raised-button color="warn" (click)="deleteChorus(chorus)" >Delete</button>
       </mat-card-actions>
     </mat-card>
   </div>
