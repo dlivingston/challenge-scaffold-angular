@@ -1,6 +1,6 @@
 <mat-toolbar color="white" class="mat-elevation-z4" >
   <img src="assets/chorus-connector-logo-transparent-bg.png" alt="Chorus Connector" height="50">
-  <span>Chorus Connector</span>
+  <span class="logo-title">Chorus Connector</span>
   <span class="spacer"></span>
   <button mat-raised-button *ngIf="!isLoggedIn" routerLink="/login">Login</button>
   <button mat-raised-button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
