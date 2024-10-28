@@ -35,3 +35,26 @@ npm install
 ng serve
 ```
 Update this README with anything we should know about your solution (including spin-up and testing instructions, if relevant).
+
+### Notes from Don Livingston
+I have created a simple Angular application that meets the requirements of the project. I have used Angular Material for the UI components and have implemented a simple authentication using localStorage. The application is responsive and should work on all devices. 
+
+To run the application, clone the repository and run the same commands as above. The application will be available at http://localhost:4200/.
+
+The admin username is `admin` and the password is `admin`.
+
+Had I more time, I would have implemented the following:
+- Unit tests for the components and services
+- a better authentication system
+- a better crafted UI and interactions
+
+I hope you enjoy the application and I look forward to hearing from you soon.
+
+### Notes on AI/ML
+I did use ChatGPT to help plan out the structure of the application and to help me think through the requirements. I did not use it to write any code or to generate any content. I also used Copilot as an aid to help me write code, and to help me think through the structure of the application and to help me write code faster.
+
+Here is the link to the ChatGPT document: https://chatgpt.com/share/671f92aa-390c-800d-bf01-f16a8d8bac80
+
+### Discliamer
+
+This project is only intended to meet the requirements specified. No warranties, either express or implied, are hereby given. All information is supplied as is, without guarantee. The user assumes all responsibility for damages resulting from the use of this application, including (but not limited to) frustration, disgust, headaches, nausea, indigestion, system abends, disk head-crashes, general malfeasance, floods, fires, shark attack, nerve gas, locust infestation, cyclones, hurricanes, tsunamis, local electromagnetic disruptions, hydraulic brake system failure, invasion, low sperm count, hashing collisions, abnormal wear and tear of friction surfaces, cosmic radiation, inadvertent destruction of sensitive electronic components, amoebic dysentery, windstorms, the Riders of Nazgul, the Knights who say 'Ni', decreased resale value on your home, infuriated chickens, malfunctioning mechanical or electrical devices, premature activation of the distant early warning system, peasant uprisings, halitosis, artillery bombardment, explosions, cave-ins, and/or frogs falling from the sky. 
