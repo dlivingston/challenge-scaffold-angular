@@ -14,12 +14,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FilterPipe } from './filter.pipe';
 import { MatIconModule } from '@angular/material/icon';
+import { LoginComponent } from './login/login.component';
+import { AdminViewComponent } from './admin-view/admin-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PublicViewComponent,
-    FilterPipe
+    FilterPipe,
+    LoginComponent,
+    AdminViewComponent
   ],
   imports: [
     AppRoutingModule,
